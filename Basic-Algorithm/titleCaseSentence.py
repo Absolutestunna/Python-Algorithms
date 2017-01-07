@@ -8,6 +8,10 @@ def titleCase(str):
 
             For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
 
+            Answer was provided in the Python docs:
+
+                https://docs.python.org/3/library/stdtypes.html#str.title
+
     '''
 
     return re.sub(r"[A-Za-z]+('[A-Za-z]+)?",
