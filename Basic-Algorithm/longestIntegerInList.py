@@ -1,4 +1,4 @@
-def findLongestWord(lis):
+def largestOfFour(lis):
 
     '''
         Assignment:
@@ -11,25 +11,18 @@ def findLongestWord(lis):
 
     '''
 
-    #Solution 1
-    # finalArr, evaluator = [], 0
-        
-    # for x in lis:
-    #     for y in x:
-    #         if y > evaluator:
-    #             evaluator = y
-    #
-    #     finalArr.append(evaluator)
-    #
+    # Solution 1
+    finalArr, evaluator = [], 0
 
-    # return finalArr
+    for x in lis:
+        for y in x:
+            if y > evaluator:
+                evaluator = y
 
-    #Solution 2
+        finalArr.append(evaluator)
 
-    [evaluate(y) x in lis y in x]
 
-    def evaluate(y):
-        if y > evaluator:
-            evaluator = y
+    return finalArr
+
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
