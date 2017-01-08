@@ -15,7 +15,7 @@ def chunkArrayInGroups(arr, size):
 
     for i in range(0, size):
         listGroups.append(arr[0: size])
-        del(arr[0: size])
+        del(arr[0: size])    #delete the sliced group after it's been saved. Not efficient. Need to                dynamically slice the arr on the appropriate indices.
 
     return listGroups
 
