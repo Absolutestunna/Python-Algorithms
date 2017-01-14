@@ -11,6 +11,14 @@ def mutation(arrList):
 
             Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
 
+        Special notes:
+
+            ord: Given a string representing one Unicode character, return an integer representing the Unicode code point of that character. For example, ord('a') returns the integer 97 and ord('€') (Euro sign) returns 8364. This is the inverse of chr().
+
+            chr: Return the string representing a character whose Unicode code point is the integer i. For example, chr(97) returns the string 'a', while chr(8364) returns the string '€'. This is the inverse of ord().
+
+            The valid range for the argument is from 0 through 1,114,111 (0x10FFFF in base 16). ValueError will be raised if i is outside that range.
+
     '''
 
     for char in arrList[1]:

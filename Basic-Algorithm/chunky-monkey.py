@@ -1,3 +1,5 @@
+import math
+
 def chunkArrayInGroups(arr, size):
 
     '''
@@ -15,7 +17,21 @@ def chunkArrayInGroups(arr, size):
 
     for i in range(0, size):
         listGroups.append(arr[0: size])
-        del(arr[0: size])    #delete the sliced group after it's been saved. Not efficient. Need to                dynamically slice the arr on the appropriate indices.
+        del(arr[0: size])                   #delete the sliced group after it's been saved. Not efficient. Need to        dynamically slice the arr on the appropriate indices.
+
+    return listGroups
+
+
+    #solution 2
+
+    listGroups, start, end = list(), 0, size
+
+    range_end = int(math.ceil(len(arr)/size))
+
+    for i in range(0, range_end):
+        listGroups.append(arr[start: end])
+        start += size
+        end += start
 
     return listGroups
 

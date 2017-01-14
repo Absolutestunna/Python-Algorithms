@@ -18,14 +18,14 @@ def rot13(str):
     finalStr = list()
 
     for char in str:
-        if ord(char) >= 65 and ord(char) <= 77:
+        if ord(char) >= 65 and ord(char) <= 77:      #letters A - M
             finalStr.append(chr(ord(char) + 13))
-        elif ord(char) >= 78 and ord(char) <= 90:
+        elif ord(char) >= 78 and ord(char) <= 90:    #letters N - Z
             finalStr.append(chr(ord(char) - 13))
         else:
             finalStr.append(char)
 
-    return ' '.join(finalStr)
+    return ' '.join(finalStr)                       #convert back to string
 
 #Change the inputs below to test
 rot13("SERR PBQR PNZC");
