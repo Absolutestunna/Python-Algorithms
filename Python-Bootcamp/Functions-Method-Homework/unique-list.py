@@ -7,6 +7,6 @@ def unique_list(l):
         Unique List : [1, 2, 3, 4, 5]
         In [13]:
     '''
-    return set(l)
+    return list(set(l))
 
 unique_list([1,1,1,1,2,2,3,3,3,3,4,5])

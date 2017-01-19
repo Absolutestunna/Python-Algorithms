@@ -15,7 +15,7 @@ def vol(rad):
 
     '''
 
-    volume = (4/3) * math.pi * (rad ** 3)
-    return volume
+    return (4/3) * math.pi * (rad ** 3)
+
 
 vol(3)
