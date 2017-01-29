@@ -22,8 +22,9 @@ def palindrome(str):
 
     '''
 
-    finalStr = re.sub("[^a-zA-Z]", "", str) # re.sub(MATCH PATTERN, STRING REPLACEMENT, STRING TO SEARCH)
+    finalStr = re.sub("[^a-zA-Z]", "", str)         # re.sub(MATCH PATTERN, STRING REPLACEMENT, STRING TO SEARCH)
+    reversed_str = finalStr[::-1]                   # reverse string
 
-    return finalStr
+    return finalStr == split_str                
 
-palindrome('_eye')
+palindrome('_eyes')
