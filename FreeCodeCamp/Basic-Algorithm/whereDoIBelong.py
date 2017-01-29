@@ -11,9 +11,9 @@ def getIndexToIns(arrList, num):
 
     '''
 
-    arrList.append(num)
-    sortedList = sorted(arrList)
-    return sortedList.index(num)
+    arrList.append(num)                     # add the num arg to the list
+    sortedList = sorted(arrList)            # sort it
+    return sortedList.index(num)            # return the index of the num arg
 
 
 getIndexToIns([40, 60], 50);

@@ -18,4 +18,4 @@ def destroyer(fargs, *args):
     return [x for x in fargs if x not in args]
 
 
-destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);   # should return [1, 1]
