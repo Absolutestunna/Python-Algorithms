@@ -12,7 +12,7 @@ def d_list(L):
     # return dict_answer
 
     #Solution 2
-    [{counter: key} for counter,key in enumerate(L)]
+    return [{counter: key} for counter,key in enumerate(L)]
 
 
 d_list(['a','b','c']) #{'a': 0, 'b': 1, 'c': 2}
