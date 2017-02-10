@@ -6,9 +6,13 @@ def concatenate(L1, L2, connector):
         between them.
     '''
 
-    zipped_tuple = list(zip(L1, L2))
-    z2 = ['-'.join(result) for result in zipped_tuple]
-    return z2
+    #Solution 1
+    # zipped_tuple = list(zip(L1, L2))
+    # z2 = ['-'.join(result) for result in zipped_tuple]
+    # return z2
+
+    #Solution 2
+    return [w1, w2for w1, w2 in zip(L1, L2)]
 
 
 
